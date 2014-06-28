@@ -1,0 +1,16 @@
+Day/Night background set
+
+http://xkcd.com/info.0.json
+
+var comic = null;
+var req = new XMLHttpRequest();
+req.responseType = "json";
+req.open("GET", "http://xkcd.com/614/info.0.json", false);
+
+req.onreadystatechange = function() {
+  if(req.readyState===4&&req.status===200) {
+     comic = response;
+  }
+}
+
+req.send(null);
