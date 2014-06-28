@@ -2,14 +2,10 @@
 	Backgrounds
 */
 
-.bg1:root { background-image: url(backgrounds/bg1.jpg); } 
-.bg2:root { background-image: url(backgrounds/bg2.jpg); } 
-.bg3:root { background-image: url(backgrounds/bg3.jpg); } 
-.bg4:root { background-image: url(backgrounds/bg4.jpg); } 
-.bg5:root { background-image: url(backgrounds/bg5.jpg); } 
-.bg6:root { background-image: url(backgrounds/bg6.jpg); } 
-.bg7:root { background-image: url(backgrounds/bg7.jpg); } 
-.bg8:root { background-image: url(backgrounds/bg8.jpg); } 
+.bgd1:root { background-image: url(backgrounds/bgd1.jpg); } 
+.bgd2:root { background-image: url(backgrounds/bgd2.jpg); } 
+.bgn1:root { background-image: url(backgrounds/bgn1.jpg); } 
+.bgn2:root { background-image: url(backgrounds/bgn2.jpg); } 
 
 /*
 	General stuff

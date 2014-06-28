@@ -6,9 +6,18 @@
 		<link rel="icon" type="image/png" href="pomf.png">
 		<link href="style.css" rel="stylesheet" type="text/css">
 		<script type="text/javascript">
-			var bgs = [ 'bg1', 'bg2', 'bg3', 'bg4', 'bg5', 'bg6', 'bg7', 'bg8' ];
-			var bg = bgs[Math.floor(Math.random() * bgs.length)];
-			document.querySelector('html').classList.add(bg);
+			var date = new Date();
+			var hour = date.getHours();
+			if (hour>6 && hour<18) {
+				var bgd = [ 'bgd1', 'bgd2' ]
+				var bgd = bgd[Math.floor(Math.random() * bgd.length)];
+				document.querySelector('html').classList.add(bgd);
+			}
+			else {
+				var bgn = [ 'bgn1', 'bgn2' ];
+				var bgn = bgn[Math.floor(Math.random() * bgn.length)];
+				document.querySelector('html').classList.add(bgn);
+			}
 		</script>
 	</head>
 	
@@ -253,20 +262,6 @@
 			
 			// Only load weather on click
 			function loadWeather() {
-				/*$.simpleWeather({
-					woeid: woeid,
-					unit: 'c',
-					success: function(weather) {
-						html = '<p>'+weather.city+'<br />';
-						html += weather.temp+'&deg;'+weather.units.temp+'<br />';
-						html += weather.currently+'</p>';
-						$("#weather").html(html);
-					},
-					error: function(error) {
-						$("#weather").html('<p>'+error+'</p>');
-					}
-				});*/
-				
 				$.simpleWeather({
 					woeid: '729028',
 					unit: 'c',
@@ -305,9 +300,6 @@
 				}
 				
 			}
-				
-				
-				
 		</script>
 	</body>
 </html>
